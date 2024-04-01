@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    color: #000;
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.main {
+    width: 90%;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.title h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+input {
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 15px auto;
+    border-radius: 5px;
+    height: 50px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price input {
+    margin-right: 10px;
+}
+
+.price small {
+    display: flex;
+    white-space: nowrap;
+    background-color: #413EFF;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 14px;
+    width: 50%;
+    overflow: hidden;
+    color: #fff;
+}
+
+#total::before {
+    content: 'Total  ';
+    vertical-align: top;
+    margin-right: 10px;
+}
+
+.inputs button {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-color: #413EFF;
+    color: #fff;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.inputs button:hover {
+    background-color: #5754FF;
+}
+
+.btnSearch {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0px;
+    gap: 20px;
+}
+
+.btnSearch button,
+#deleteAll {
+    width: 100%;
+    padding: 8px 0;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-color: #413EFF;
+    color: #fff;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.btnSearch button:hover {
+    background-color: #5754FF;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    margin: 30px 0px 10px;
+    overflow: auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px 0;
+}
+
+th {
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+td button {
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    background-color: #413EFF;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1060px) {
+    * {
+        font-size: 14px;
+    }
+
+    td button {
+        padding: 3px 8px;
+        border-radius: 10px;
+    }
+
+    table {
+        overflow-x: auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main {
+        width: 100%;
+    }
+
+    .price small {
+        width: 100%;
+    }
+
+    th {
+        text-transform: lowercase;
+    }
+}
+
+@media screen and (max-width: 655px) {
+    * {
+        font-size: 12px;
+    }
+    input, button {
+        font-size: 14px;
+    }
+    .price small {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    * {
+        font-size: 10px;
+    }
+}
